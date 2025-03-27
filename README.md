@@ -71,20 +71,13 @@ Nome do Script = dashboard_mqtt_ipfs.py
   ```
 
 
-<b>2. Instale o Tkinter </b>
-
-  ```bash
-    sudo apt install python3-tk
-  ```
-
-
-<b>3. Inicie o IPFS Daemon (se não estiver rodando)</b>
+<b>2. Iniciar o IPFS Daemon (se não estiver rodando)</b>
 
   ```bash
     ipfs daemon
   ```
 
-<b>4. Ativar o ambiente virtual</b>
+<b>3. Ativar o ambiente virtual</b>
 
 Navegue até a pasta do projeto e abra o prompt:
 
@@ -92,19 +85,19 @@ Navegue até a pasta do projeto e abra o prompt:
     source ~/ipfs-mqtt-venv/bin/activate
   ```
 
-<b>5. Instale o Tkinter </b>
+<b>4. Instalar o Tkinter </b>
 
   ```bash
     sudo apt install python3-tk
   ```
 
-<b>6. Execute o dashboard </b>
+<b>5. Executar o dashboard </b>
 
   ```bash
     python3 dashboard_mqtt_ipfs.py
   ```
 
-<b>7. Publicar uma Mensagem</b>
+<b>6. Publicar uma Mensagem</b>
 
   ```bash
     mosquitto_pub -h localhost -t "sensores/umidade" -m "30°C"
